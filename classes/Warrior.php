@@ -1,6 +1,6 @@
 <?php 
 
-class Warrior extend Character
+class Warrior extends Character
 {
     private $boost = False;
 
@@ -29,6 +29,6 @@ class Warrior extend Character
     private function boost() {
         $this->boost = True;
         $status = "{$this->name} se concentre pour taper plus fort!";
-        return $statu;
+        return $status;
     }
 }

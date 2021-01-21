@@ -10,7 +10,7 @@ class Mage extends Character
     }
 
     public function attack(Character $target) {
-        $rand = rand(1, 2)
+        $rand = rand(1, 2);
         if ($rand == 1 || $this->shield) {
             $status = $this->fireball($target);
         } else if ($rand == 2) {
@@ -28,7 +28,7 @@ class Mage extends Character
             $status = "{$this->name} lance une boule de feu à {$target->name}! Il reste {$target->getLifePoints()} à {$target->name} !";
         } else if ($this->magicPoints > 0) {
             $atk = $this->magicPoints*1.5;
-            $this->magicPoints = 0
+            $this->magicPoints = 0;
             $target->setLifePoints($atk);
             $status = "{$this->name} lance une boule de feu à {$target->name}! Il reste {$target->getLifePoints()} à {$target->name} !";
         } else {
@@ -40,7 +40,7 @@ class Mage extends Character
 
     private function shield() {
         $this->shield = True;
-        $status = "{$this->nam} lance un bouclier magique pour se protéger!";
+        $status = "{$this->name} lance un bouclier magique pour se protéger!";
         return $status;
     }
 

@@ -3,7 +3,7 @@
 session_start();
 
 if (count($_POST) != 2) {
-    header('Location: /');
+    header('Location: /DFS20C/PHP-POO/');
     exit();
 }
 
@@ -14,5 +14,5 @@ foreach ($_POST as $characterType) {
 }
 
 $_SESSION['fighting'] = true;
-header('Location: /');
+header('Location: /DFS20C/PHP-POO/');
 exit();
