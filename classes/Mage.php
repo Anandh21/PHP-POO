@@ -18,7 +18,6 @@ class Mage extends Character
         }
         return $status;
     }
-
     private function fireball(Character $target) {
         $rand = rand(5, 10);
         if ($rand <= $this->magicPoints) {

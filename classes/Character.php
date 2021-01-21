@@ -2,7 +2,6 @@
 
 class Character 
 {
-    public static $pv = 350;
     public $name;
     protected $lifePoints = 100;
     public $magicPoints = 10;

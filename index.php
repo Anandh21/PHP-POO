@@ -3,7 +3,7 @@ include './classes/autoload.php';
 
 session_start();
 
-$characters = ['Warrior', 'Mage'];
+$characters = ['Warrior', 'Mage', 'Druid'];
 
 if (isset($_SESSION['fighting'])) {
 $player1 = new $_SESSION['fighters'][0]($_SESSION['fighters'][0]);

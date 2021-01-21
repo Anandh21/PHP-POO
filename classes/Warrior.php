@@ -20,12 +20,15 @@ class Warrior extends Character
             $rand /= 10;
             $attack *= $rand;
             $this->boost = False;
+            $status = "$this->name attaque avec <strong style='color: red'>Rage</strong> {$target->name}! Il reste {$target->getLifePoints()} à {$target->name} !";
+
+        }else{
+            $status = "$this->name attaque {$target->name}! Il reste {$target->getLifePoints()} à {$target->name} !";
+
         }
         $target->setLifePoints($attack);
-        $status = "$this->name attaque {$target->name}! Il reste {$target->getLifePoints()} à {$target->name} !";
         return $status;
     }
-
     private function boost() {
         $this->boost = True;
         $status = "{$this->name} se concentre pour taper plus fort!";
