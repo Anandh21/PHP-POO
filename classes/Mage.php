@@ -39,7 +39,7 @@ class Mage extends Character
 
     private function shield() {
         $this->shield = True;
-        $status = "{$this->name} lance un bouclier magique pour se protéger!";
+        $status = "{$this->name} lance un <strong style='color: blue'> bouclier magique </strong> pour se protéger!";
         return $status;
     }
 
